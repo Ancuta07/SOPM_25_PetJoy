@@ -43,4 +43,4 @@ Website-ul *PetJoy* reprezintă o aplicație web completă, destinată unei clin
 
 Proiect realizat de **Băcanu Cosmina**, **Bejenaru Maria** și **Ciocîrtău Ancuța**,  
 studenți la **Facultatea de Inginerie Electrică și Știința Calculatoarelor – anul 2025**,  
-în cadrul cursului **Sisteme de Operare și Proiecte Multimedia (SOPM)**.
+în cadrul cursului **Sisteme de Operare pentru Platforme Mobile (SOPM)**.
