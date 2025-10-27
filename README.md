@@ -35,7 +35,7 @@ Website-ul *PetJoy* reprezintă o aplicație web completă, destinată unei clin
 - **CSS** – design și stilizare responsive  
 - **JavaScript** – interactivitate și logică pentru quiz și shop  
 - **jQuery** – efecte dinamice și manipularea DOM  
-- **GitHub Pages / XAMPP** – găzduire și testare locală
+- **GitHub** – găzduire și testare locală
 
 ---
 
