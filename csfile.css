@@ -177,6 +177,9 @@ p {
 
 /* ADOPȚIE */
 .adoptie { background: #faf6ff; }
+.adoptie p {
+    font-size: 18px;
+}
 .adoptie-l {
     background: #fff;
     border-radius: 15px;
