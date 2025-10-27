@@ -1,94 +1,86 @@
 <html>
-    
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>PET SPACE</title>
-        <meta name="description" content="An interactive getting started guide for Brackets.">
-        <link rel="stylesheet" href="programare.css">
-    <title>Solicitare programare</title>
-        </head>
-    <body>
-    <section class="header">
-            <nav>
-			<div class="nav-links">
-				<ul>
-					<li><a href="index.html">MENIU</a></li>
-					<li><a href="despre.html">DESPRE NOI</a></li>
-					<li><a href="contact.html">CONTACTE</a></li>
-                    <li><a href="quiz1.html">!CONCURS!</a></li>
-				</ul>    
-			</div>
-		</nav>
-        
-    </section>
-    <div class="programare">
-        <div class="titlu">Programare Online</div>
-        
-            <div class="user-details">
-                <form >
-                <div class="inputbox">
-                <span class="details">Nume</span>
-                <input class="casuta1" type="text" placeholder="Introdu numele tau" required>
-                </div>
-                
-                <div class="inputbox">
-                <span class="details">Prenume</span>
-                <input class="casuta2" type="text" placeholder="Introdu prenumele tau" required>
-                </div>
-                
-                <div class="inputbox">
-                <span class="details">Numele animalului</span>
-                <input class="casuta3" type="text" placeholder="Introdu numele animalului" required>
-                </div>
-                
-                <div class="inputbox">
-                <span class="details">Email</span>
-                <input class="casuta4" type="text" placeholder="Introdu adresa de email" required>
-                </div>
-                
-                <div class="inputbox">
-                <span class="details">Telefon</span>
-                <input class="casuta5" type="text" placeholder="Introdu nr. de telefon" required>
-                </div>
-                
-                <div class="inputbox">
-                <span class="details">Oraș</span>
-                <input class="casuta6" type="text" placeholder="Introdu oras" required>
-                </div>
-                
-                    <div class="buton">
-            <input class="casuta7" type="submit" value="Trimite">
-            </div>
-                    
-            <div class="inputbox">
-            <input class="casuta8" type="reset" value="Resetare">
-        </div>
-    
-            </form>
-            </div>
-        </div>
-       
-    </body>
-</html>
 
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-             
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>PET SPACE</title>
+    <meta name="description" content="An interactive getting started guide for Brackets." />
+    <link rel="stylesheet" href="programare.css" />
+    <script src="programare.js"></script>
+    <title>Solicitare programare</title>
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html">🏠MENIU</a></li>
+                    <li><a href="despre.html">🐮DESPRE NOI</a></li>
+                    <li><a href="contact.html">📞CONTACTE</a></li>
+                    <li><a href="quiz1.html">❗CONCURS❗</a></li>
+                    <li><a href="shop.html">🛒SHOP</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="titlu">Programare Online</div>
+
+        <form>
+            <div class="inputbox">
+                <span class="details">Nume</span>
+                <input type="text" placeholder="Introdu numele tău" required />
+            </div>
+
+            <div class="inputbox">
+                <span class="details">Prenume</span>
+                <input type="text" placeholder="Introdu prenumele tău" required />
+            </div>
+
+            <div class="inputbox">
+                <span class="details">Numele animalului</span>
+                <input type="text" placeholder="Introdu numele animalului" required />
+            </div>
+
+            <div class="inputbox">
+                <span class="details">Email</span>
+                <input type="text" placeholder="Introdu adresa de email" required />
+            </div>
+
+            <div class="inputbox">
+                <span class="details">Telefon</span>
+                <input type="text" id="telefon-cifre-strict" placeholder="Ex: 0740123456" required />
+            </div>
+
+            <div class="inputbox">
+                <span class="details">Orașul</span>
+                <input type="text" placeholder="Introdu orașul" required />
+            </div>
+
+            <div class="inputbox">
+                <span class="details">Selectează clinica</span>
+                <select required>
+      <option value="" disabled selected>Alege clinica</option>
+      <option value="clinica1">Clinica Brasov</option>
+      <option value="clinica2">Clinica Bucuresti</option>
+      <option value="clinica3">Clinica Sibiu</option>
+    </select>
+            </div>
+
+            <div class="inputbox">
+                <span class="details">Selectează data și ora</span>
+                <input type="datetime-local" required />
+            </div>
+
+            <form>
+                <div class="buton">
+                    <input type="submit" class="casuta9" value="Trimite" />
+                </div>
+
+                <div class="buton">
+                    <input type="reset" class="casuta10" value="Resetare" />
+                </div>
+            </form>
+</body>
+
+</html>
