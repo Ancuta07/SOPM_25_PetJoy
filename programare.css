@@ -19,39 +19,38 @@ body {
 
 /*  MENIU (dreapta sus)  */
 .nav-links {
-    position: absolute;
-    top: 20px;
-    right: 40px;
-    background: rgba(0, 0, 0, 0.45);
-    padding: 12px 25px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  background: rgba(0, 0, 0, 0.45);
+  padding: 12px 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
 .nav-links ul {
-    list-style: none;
-    display: flex;
-    gap: 25px;
-    margin: 0;
-    padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
 }
 
 .nav-links a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: 500;
-    transition: color 0.3s ease;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
-    color: #c5a3ff;
+  color: #c5a3ff;
 }
-
 /*  TITLU  */
 .titlu {
   width: 800px;
   background-color: rgba(0, 0, 0, 0.6);
-  margin: 40px auto 0;
+  margin: 120px auto 0;
   color: #ffffff;
   padding: 20px 0;
   text-align: center;
@@ -62,7 +61,7 @@ body {
 form {
   animation: fadeSlideUp 1s ease-in-out;
   background-color: rgba(0, 0, 0, 0.6);
-  padding: 30px 40px;
+  padding: 30px 30px;
   border-radius: 0 0 15px 15px;
   max-width: 800px;
   margin: 0 auto 60px;
