@@ -2,7 +2,7 @@
 
 **Clinică veterinară online – PetJoy**
 
-Proiect realizat în cadrul disciplinei **Sisteme de Operare și Proiecte Multimedia (SOPM)**.
+Proiect realizat în cadrul disciplinei **Sisteme de Operare pentru Platforme Mobile (SOPM)**.
 
 Website-ul *PetJoy* reprezintă o aplicație web completă, destinată unei clinici veterinare moderne. Platforma oferă informații despre servicii, contacte, magazin online și un concurs interactiv pentru utilizatori.
 
