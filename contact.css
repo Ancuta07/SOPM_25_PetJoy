@@ -1,0 +1,144 @@
+/* Font și resetare de bază */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #fffaf3;
+  color: #333;
+}
+
+/* Bara de navigare */
+.header2 {
+  background-color: #ffb347;
+  padding: 15px 0;
+}
+
+.nav-links ul {
+  list-style: none;
+  text-align: center;
+}
+
+.nav-links ul li {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+.nav-links ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.nav-links ul li a:hover,
+.nav-links ul li a.active {
+  color: #333;
+}
+
+/* Secțiunea de contact */
+.contact-section {
+  padding: 50px 20px;
+}
+
+.contact-container {
+  max-width: 850px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 40px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.contact-container h1 {
+  text-align: center;
+  color: #ffb347;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #555;
+}
+
+.contact-info {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.contact-info p {
+  margin: 5px 0;
+}
+
+/* Program consultații */
+.program {
+  text-align: center;
+  margin-bottom: 40px;
+  background-color: #fff4e5;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.program h2 {
+  color: #ffb347;
+  margin-bottom: 10px;
+}
+
+.program .nota {
+  margin-top: 10px;
+  color: #555;
+}
+
+/* Urgențe */
+.urgente {
+  text-align: center;
+  margin-bottom: 50px;
+  background-color: #ffe8e8;
+  padding: 25px;
+  border-radius: 10px;
+  border: 1px solid #ffb3b3;
+}
+
+.urgente h2 {
+  color: #ff4a4a;
+  margin-bottom: 10px;
+}
+
+.urgente .urgent-phone {
+  font-size: 1.4em;
+  color: #ff0000;
+  margin: 10px 0;
+}
+
+/* Locații */
+.locations {
+  margin-bottom: 30px;
+}
+
+.locations h2 {
+  color: #ffb347;
+  border-bottom: 2px solid #ffb347;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+.locations ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.locations ul li {
+  background-color: #fff4e5;
+  margin: 8px 0;
+  padding: 10px 15px;
+  border-radius: 10px;
+  transition: background 0.3s;
+}
+
+.locations ul li:hover {
+  background-color: #ffe1bf;
+}
