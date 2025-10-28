@@ -1,4 +1,5 @@
 /* === FONT & RESET === */
+/* Elimină marginile implicite și aplică fontul Poppins pe tot site-ul */
 * {
     margin: 0;
     padding: 0;
@@ -7,6 +8,7 @@
 }
 
 /* === HEADER === */
+/* Fundalul principal cu imagine + text centrat pe verticală și orizontală */
 .header {
     background: url("images/hero.jpg") center/cover no-repeat;
     min-height: 100vh;
@@ -19,6 +21,8 @@
     position: relative;
     overflow: hidden;
 }
+
+/* Efect subtil animat peste imagine (radial gradient în mișcare) */
 .header::before {
     content: '';
     position: absolute;
@@ -33,6 +37,7 @@
 }
 
 /* === MENIU === */
+/* Bara de navigare din colțul dreapta-sus, cu fundal semi-transparent */
 .nav-links {
     position: absolute;
     top: 20px;
@@ -42,20 +47,27 @@
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
+
+/* Meniul orizontal – elemente separate egal cu spațiu între ele */
 .nav-links ul {
     list-style: none;
     display: flex;
     gap: 25px;
 }
+
+/* Link-urile din meniu – alb, fără subliniere */
 .nav-links a {
     text-decoration: none;
     color: #fff;
     font-weight: 500;
     transition: color 0.3s;
 }
+
+/* Culoare violet deschis la hover */
 .nav-links a:hover { color: #c5a3ff; }
 
 /* === HERO TEXT === */
+/* Caseta centrală din header cu textul principal */
 .text-box {
     margin-top: 10%;
     background: rgba(0, 0, 0, 0.5);
@@ -63,15 +75,24 @@
     border-radius: 20px;
     animation: fadeInUp 1.2s ease forwards;
 }
+
+/* Stil general pentru textul alb cu umbră pentru lizibilitate */
 .text-box h1, .text-box h2, .text-box p {
     color: #fff;
     text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
 }
+
+/* Titlul principal (mare și animat) */
 .text-box h1 { font-size: 3em; font-weight: 700; animation: popIn 1s ease; }
+
+/* Subtitlu */
 .text-box h2 { font-size: 1.8em; margin-top: 10px; animation: popIn 1.2s ease; }
+
+/* Paragraful de sub titlu */
 .text-box p  { font-size: 1.1em; margin: 15px 0 30px; animation: fadeIn 1.5s ease; }
 
 /* === BUTON === */
+/* Butonul „Solicitare programare” – cu animație de plutire */
 .btn {
     display: inline-block;
     background: #7a42ff;
@@ -84,14 +105,18 @@
     animation: floatBtn 2.5s ease-in-out infinite alternate;
     transition: all 0.3s;
 }
+
+/* Efect hover: butonul devine mai deschis și crește ușor */
 .btn:hover { background: #c5a3ff; transform: translateY(-3px) scale(1.05); }
 
+/* Animație plutire lentă */
 @keyframes floatBtn {
     0%, 100% { transform: translateY(0); }
     50% { transform: translateY(-8px); }
 }
 
 /* === STRUCTURĂ GENERALĂ === */
+/* Stiluri comune pentru toate secțiunile */
 section {
     padding: 60px 20px;
     text-align: center;
@@ -105,6 +130,7 @@ p {
     max-width: 900px;
     margin: 0 auto 40px;
 }
+/* Sistem flexibil de aliniere pentru carduri */
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -113,6 +139,7 @@ p {
 }
 
 /* === CARDURI GENERALE === */
+/* Format comun pentru toate cardurile (ofertă, clinici, adopție) */
 .oferta-l, .clinici-l, .adoptie-l {
     background: #fff;
     border-radius: 15px;
@@ -123,14 +150,20 @@ p {
     text-align: center;
     transition: transform 0.5s, box-shadow 0.5s;
 }
+
+/* Efect de ridicare ușoară la hover */
 .oferta-l:hover, .clinici-l:hover, .adoptie-l:hover {
     transform: translateY(-6px) scale(1.02);
     box-shadow: 0 10px 18px rgba(122,66,255,0.2);
 }
+
+/* Titlu mov pentru fiecare card */
 .oferta-l h3, .clinici-l h3, .adoptie-l h3 {
     color: #7a42ff;
     margin-bottom: 10px;
 }
+
+/* Poze adaptabile în interiorul cardurilor */
 .oferta-l img, .clinici-l img, .adoptie-l img {
     width: 100%;
     height: 190px;
@@ -139,14 +172,18 @@ p {
 }
 
 /* === OFERTĂ === */
+/* Fundal deschis pentru secțiunea de servicii */
 .oferta { background: #faf6ff; }
 
 /* === CLINICI === */
+/* Zonă pentru clinicile fizice + animația cățelului */
 .clinici {
     position: relative;
     background: transparent;
     padding: 60px 0 40px;
 }
+
+/* Cățeluș animat stânga-dreapta sub titlul "Clinicile noastre" */
 .puppy-animation {
     position: absolute;
     top: 35px;
@@ -163,6 +200,7 @@ p {
 }
 
 /* === ADOPȚIE === */
+/* Fundal liliachiu și text mai mare pentru paragraful de introducere */
 .adoptie { background: #faf6ff; }
 .adoptie > p {
     font-size: 1.2em;
@@ -174,6 +212,7 @@ p {
 }
 
 /* === ANIMAȚII TEXT === */
+/* Efecte de apariție treptată pentru text */
 @keyframes fadeInUp {
     0% { opacity: 0; transform: translateY(30px); }
     100% { opacity: 1; transform: translateY(0); }
@@ -188,12 +227,15 @@ p {
 }
 
 /* === CHATBOT === */
+/* Fereastra chatbotului fixată în colțul dreapta-jos */
 .chatbot {
     position: fixed;
     bottom: 20px;
     right: 20px;
     z-index: 100;
 }
+
+/* Butonul rotund mov al chatbotului */
 .chatbot-icon {
     width: 60px;
     height: 60px;
@@ -210,6 +252,7 @@ p {
 }
 .chatbot-icon:hover { transform: scale(1.1); }
 
+/* Fereastra care se deschide când dai click pe robot */
 .chatbot-window {
     display: none;
     width: 250px;
@@ -221,12 +264,16 @@ p {
     overflow: hidden;
     margin-bottom: 10px;
 }
+
+/* Zona unde apar mesajele */
 .chatbot-messages {
     flex: 1;
     padding: 10px;
     overflow-y: auto;
     font-size: 14px;
 }
+
+/* Stiluri pentru mesajele botului și utilizatorului */
 .bot-message, .user-message {
     padding: 6px 10px;
     border-radius: 10px;
@@ -242,6 +289,8 @@ p {
     color: #333;
     align-self: flex-end;
 }
+
+/* Câmpul de text pentru scrierea mesajului */
 #chatInput {
     border: none;
     border-top: 1px solid #ccc;
@@ -251,12 +300,10 @@ p {
 }
 
 /* === RESPONSIVE === */
+/* Ajustări pentru ecrane mici (mobil / tabletă) */
 @media (max-width: 768px) {
     .row { flex-direction: column; align-items: center; }
     .text-box h1 { font-size: 2.2em; }
     .text-box h2 { font-size: 1.3em; }
     .clinici-l, .adoptie-l { width: 90%; }
 }
-
-
-
